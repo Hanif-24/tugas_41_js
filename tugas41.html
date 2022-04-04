@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Pilih Warna Backgorund</p>
+
+    <select id="opsi" onchange="menu()">
+      <option value="red">Merah</option>
+      <option value="blue">Biru</option>
+      <option value="yellow">Kuning</option>
+      <option value="white">Putih</option>
+    </select>
+
+    <p>Saat Kamu Memilih Warna, Backgorund Akan Berubah</p>
+
+    <script type="text/javascript">
+          function menu(){
+            var warna = document.getElementById('opsi').value;
+            document.body.style.backgroundColor = warna;
+          }
+    </script>
+  </body>
+</html>
